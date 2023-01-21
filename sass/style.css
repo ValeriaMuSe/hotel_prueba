@@ -1,0 +1,171 @@
+.banner-container {
+  width: auto;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 29px;
+  color: #333333;
+  text-align: center;
+}
+
+.banner__imagen {
+  height: 177px;
+  width: auto;
+}
+
+.banner__subtitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+.banner__text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333333;
+  padding: 0px 76px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  width: 720px;
+}
+
+.card-general {
+  padding: 0px 108px;
+  margin-bottom: 24px;
+}
+
+.card__imagen {
+  max-width: 375px;
+}
+
+.card__text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+  padding-right: 95px;
+}
+
+.button {
+  background-color: #e90808;
+  margin-left: 231px;
+  border: solid 2px red;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 22px;
+  color: aliceblue;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header__logo {
+  width: 100px;
+  position: relative;
+  bottom: 235px;
+}
+
+.menu__image {
+  max-width: 100%;
+}
+
+.toggle-menu {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  filter: invert(1);
+  cursor: pointer;
+  width: 40px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-menu {
+    display: none;
+  }
+}
+.main-menu {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4F9ABF;
+  transition: transform 0.3s;
+  transform: translateY(-100%);
+}
+
+.main-menu--show {
+  transform: translateY(0);
+}
+
+.toggle-menu__checkbox {
+  display: none;
+}
+
+.toggle-menu__checkbox:checked + .main-menu {
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .main-menu {
+    flex-direction: row;
+    transform: translateY(0);
+  }
+}
+.main-menu__item {
+  padding: 1em;
+}
+
+.main-menu__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home__footer {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  justify-content: center;
+  background-color: #4F9ABF;
+  color: #fff;
+}
+
+.logo--size {
+  width: 30px;
+}
+
+.home-airplane__image {
+  width: 365px;
+}
+
+.home-about-us {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.about-us__text {
+  margin-left: 15px;
+}/*# sourceMappingURL=style.css.map */
