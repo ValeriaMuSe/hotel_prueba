@@ -1,0 +1,81 @@
+.hotelQ_form {
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: 27px 60px;
+  background: #fff;
+}
+
+.hotelQ_title {
+  border-bottom: 2px solid #1161ed;
+  padding-left: 12px;
+  font-size: 22px;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+}
+
+.hotelQ_subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.4; 
+  display: inline-block;
+  position: relative;
+  top: -55px;
+  left: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hotelQ_subtitle-1 {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.4; 
+  display: inline-block;
+  position: relative;
+  top: -94px;
+  left: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hotelQ_input {
+  width: 90%;
+  height: 40px;
+  border-radius: 20px;
+  background: #EEEEEE;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  padding: 7px;
+}
+
+.hotelQ_input-1 {
+  width: 90%;
+  height: 80px;
+  border-radius: 20px;
+  background: #EEEEEE;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  padding: 7px;
+}
+
+.hotelQ_btn{
+  background-color: #1161ed;
+  color: #FFF;
+  width: 90%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+

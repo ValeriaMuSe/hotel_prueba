@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="../sass/style.css">
+  <title>Document</title>
 </head>
 <body>
   <header>
@@ -40,20 +40,24 @@
     </nav>
     <img class="header__logo " src="images/go-travel-logo.svg" alt="">
   </header>
-  <main>
-    <div>
-      <img class="home-airplane__image" src="images/airplane-home-section.jpg" alt="">
-      <h1>GoTravel</h1>
-      <p>Travel Agency</p>
-    </div>
-    <div class="home-about-us">
-      <img src="images/globe-image-about-us.jpg" alt="">
-      <div class="about-us__text">
-        <h2>About us</h2>
-        <p>Our site is specialized in giving people a variety of destinations and hotels to enjoy their vacations </p>
-      </div>   
-    </div>
-  </main>
+  <div class="hotelQ_form">
+    <form>
+      <h2 class="hotelQ_title">Send your question to the hotel</h2>
+      <input type="text" class="hotelQ_input" name="username">
+      <span class="hotelQ_subtitle">username</span>
+      <br>
+      <input type="email" class="hotelQ_input" name="email">
+      <span class="hotelQ_subtitle">email</span>
+      <br>
+      <input type="password" class="hotelQ_input">
+      <span class="hotelQ_subtitle">password</span>
+      <br>
+      <input type="text" class="hotelQ_input-1">
+      <span class="hotelQ_subtitle-1">Question</span>
+      <br>
+      <button class="hotelQ_btn">Submit</button>
+    </form>
+  </div>
   <footer class="home__footer">
     <p class="logo">GoTravel</p>
     <div class="social-media">
