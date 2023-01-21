@@ -1,0 +1,35 @@
+.banner-container{
+  width: auto;
+  display: grid;
+  justify-content: center;
+}
+
+.banner__title {
+  width: auto;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+.banner__image{
+  width: 100%;
+}
+
+.banner__subtitle{
+  font-weight: 600;
+  font-size: 24px;
+  width: 90%;
+  text-align: center;
+  color: #333333;
+}
+
+.banner__text{
+  font-weight: 500;
+  width: 87%;
+  font-size: 15px;
+  color: #333333;
+  text-align: center;
+  margin-left: 15px;
+}
+

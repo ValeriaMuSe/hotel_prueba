@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="../sass/style.css">
+  <script src="https://kit.fontawesome.com/b6a831c146.js" crossorigin="anonymous"></script>
+  <title>Document</title>
 </head>
 <body>
   <header>
@@ -40,20 +41,20 @@
     </nav>
     <img class="header__logo " src="images/go-travel-logo.svg" alt="">
   </header>
-  <main>
-    <div>
-      <img class="home-airplane__image" src="images/airplane-home-section.jpg" alt="">
-      <h1>GoTravel</h1>
-      <p>Travel Agency</p>
+  <form class="logIn_form">
+    <h1 class="logIn_title">Log in <span class="logIn_subtitle">Please enter your details</span></h1>
+    <input type="email" name="email" class="logIn_input">
+    <label for="text" class="logIn_label">Email</label>
+    <input type="password" name="password" class="logIn_input">
+    <label for="password" class="logIn_label logIn-move active">Password</label>
+    <i class="fa-solid fa-eye"></i>
+    <a href="#" class="logIn_a">Forgot Password?</a>
+    <div class="logIn_btns-form">
+      <button class="logIn_btn logIn_btn-changes">Sing in</button> 
+      <span class="logIn_span">Or</span>
+      <button class="logIn_btn logIn_btn-changes1">Create an account</button>
     </div>
-    <div class="home-about-us">
-      <img src="images/globe-image-about-us.jpg" alt="">
-      <div class="about-us__text">
-        <h2>About us</h2>
-        <p>Our site is specialized in giving people a variety of destinations and hotels to enjoy their vacations </p>
-      </div>   
-    </div>
-  </main>
+  </form>
   <footer class="home__footer">
     <p class="logo">GoTravel</p>
     <div class="social-media">

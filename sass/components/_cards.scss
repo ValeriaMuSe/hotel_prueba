@@ -1,0 +1,25 @@
+.card-container{
+  display: grid;
+  width: auto;
+}
+
+.card-general{
+  width: auto;
+  border: 1px solid #000;
+  display: grid;
+  place-content: center;
+  margin-bottom: 10px;
+}
+
+.card__imagen{
+  width: 100%;
+}
+
+.card__text{
+  font-weight: 500;
+  font-size: 14px;
+  width: auto;
+  color: #333333;
+  text-align: center;
+}
+
