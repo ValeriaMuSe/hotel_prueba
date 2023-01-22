@@ -1,67 +1,84 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .banner-container {
   width: auto;
+  display: grid;
+  justify-content: center;
 }
 
 .banner__title {
+  width: auto;
   font-weight: 700;
-  font-size: 41px;
-  line-height: 29px;
+  font-size: 24px;
   color: #333333;
   text-align: center;
 }
 
-.banner__imagen {
-  height: 177px;
-  width: auto;
+.banner__image {
+  width: 100%;
 }
 
 .banner__subtitle {
   font-weight: 600;
-  font-size: 36px;
-  line-height: 20px;
+  font-size: 24px;
+  width: 90%;
   text-align: center;
   color: #333333;
 }
 
 .banner__text {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  width: 87%;
+  font-size: 15px;
   color: #333333;
-  padding: 0px 76px;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 15px;
 }
 
 .card-container {
   display: grid;
-  width: 720px;
+  width: auto;
 }
 
 .card-general {
-  padding: 0px 108px;
-  margin-bottom: 24px;
+  width: auto;
+  border: 1px solid #000;
+  display: grid;
+  place-content: center;
+  margin-bottom: 10px;
 }
 
 .card__imagen {
-  max-width: 375px;
+  width: 100%;
 }
 
 .card__text {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
+  width: auto;
   color: #333333;
-  padding-right: 95px;
+  text-align: center;
 }
 
-.button {
-  background-color: #e90808;
-  margin-left: 231px;
-  border: solid 2px red;
-  padding: 12px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-size: 22px;
-  color: aliceblue;
-  font-weight: 500;
+.button--form {
+  display: grid;
+  place-content: center;
+  width: auto;
+}
+
+.button-container {
+  width: 140px;
+  height: 35px;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: rgba(153, 153, 153, 0.6);
+  border: 1px solid transparent;
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -168,4 +185,250 @@ a {
 
 .about-us__text {
   margin-left: 15px;
+}
+
+.hotelQ_form {
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: 27px 60px;
+  background: #fff;
+}
+
+.hotelQ_title {
+  border-bottom: 2px solid #1161ed;
+  padding-left: 12px;
+  font-size: 22px;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+}
+
+.hotelQ_subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.4;
+  display: inline-block;
+  position: relative;
+  top: -55px;
+  left: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hotelQ_subtitle-1 {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.4;
+  display: inline-block;
+  position: relative;
+  top: -94px;
+  left: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hotelQ_input {
+  width: 90%;
+  height: 40px;
+  border-radius: 20px;
+  background: #EEEEEE;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  padding: 7px;
+}
+
+.hotelQ_input-1 {
+  width: 90%;
+  height: 80px;
+  border-radius: 20px;
+  background: #EEEEEE;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  padding: 7px;
+}
+
+.hotelQ_btn {
+  background-color: #1161ed;
+  color: #FFF;
+  width: 90%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+body {
+  font-weight: 500;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  position: absolute;
+  right: 15%;
+  bottom: 295px;
+}
+
+.logIn_form {
+  width: auto;
+  background: #FFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #ff962f;
+}
+
+.logIn_title {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.logIn_title:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #000;
+  left: 0;
+}
+
+.logIn_subtitle {
+  display: flex;
+  font-size: 18px;
+  color: cadetblue;
+}
+
+.logIn_btns-form {
+  display: grid;
+  gap: 0.8rem;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 25px;
+}
+
+.logIn_input {
+  position: relative;
+  width: 90%;
+  padding: 20px 12px 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.logIn_label {
+  position: absolute;
+  left: 61px;
+  top: 152px;
+  font-size: 0.8rem;
+}
+
+.logIn-move {
+  top: 210px;
+}
+
+.logIn_a {
+  float: right;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.logIn_btn {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.logIn_btn-changes {
+  background-color: #ff962f;
+  color: #FFF;
+}
+
+.logIn_btn-changes1 {
+  background-color: #FFF;
+  color: #ff962f;
+  border: #ff962f solid 1px;
+}
+
+.logIn_span {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  color: #ff962f;
+}
+
+.logIn_span::before,
+.logIn_span::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin: auto;
+}
+
+.logIn_span::before {
+  margin-left: 10px;
+}
+
+.logIn_span::after {
+  margin-right: 10px;
+}
+
+.list__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 29px;
+  color: #333333;
+  text-align: center;
+}
+
+.list-container {
+  display: grid;
+  width: auto;
+}
+
+.list-general {
+  width: auto;
+  display: grid;
+  place-content: center;
+  margin-bottom: 12px;
+}
+
+.list__symbol {
+  width: 100%;
+}
+
+.list__text {
+  font-weight: 500;
+  font-size: 18px;
+  width: auto;
+  color: #333333;
+  margin-left: 10px;
+}
+
+.list__btn {
+  width: 125px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  border: 1px solid transparent;
+  margin-top: -6px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */

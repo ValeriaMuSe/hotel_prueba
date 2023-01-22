@@ -1,0 +1,38 @@
+.list-container {
+  display: grid;
+  width: auto;
+}
+
+.list-general{
+  width: auto;
+  display: grid;
+  place-content: center;
+  margin-bottom: 12px;
+}
+
+.list__symbol{
+  width: 100%;
+}
+
+.list__text{
+  font-weight: 500;
+  font-size: 18px;
+  width: auto;
+  color: #333333;
+  margin-left: 10px;
+}
+
+.list__btn {
+  width: 125px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  border: 1px solid transparent;
+  margin-top: -6px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
