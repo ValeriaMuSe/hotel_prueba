@@ -5,57 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../sass/style.css">
-  <script src="https://kit.fontawesome.com/b6a831c146.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
   <header>
-    <nav class="main-nav">
-      <div id="toggle-menu" class="toggle-menu">
-        <label for="toggle-menu-checkbox">
-          <img class="menu__image" src="assets/hamburguer-icon.png" alt="" />
-        </label>
-      </div>
-      <input
-        type="checkbox"
-        class="toggle-menu__checkbox"
-        id="toggle-menu-checkbox"
-      />
-      <ul id="main-menu" class="main-menu">
-        <li class="main-menu__item">
-          <img class="header__logo " src="images/go-travel-logo.svg" alt="">
-        </li>
-        <li class="main-menu__item">
-          <a href="#" class="main-menu__link">Home</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#" class="main-menu__link">Destinations</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#" class="main-menu__link">Hotels</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#" class="main-menu__link">Log In</a>
-        </li>
-      </ul>
-    </nav>
-    <img class="header__logo " src="images/go-travel-logo.svg" alt="">
-  </header>
-  <form class="logIn_form">
-    <h1 class="logIn_title">Log in <span class="logIn_subtitle">Please enter your details</span></h1>
-    <input type="email" name="email" class="logIn_input">
-    <label for="text" class="logIn_label">Email</label>
-    <input type="password" name="password" class="logIn_input">
-    <label for="password" class="logIn_label logIn-move active">Password</label>
-    <i class="fa-solid fa-eye"></i>
-    <a href="#" class="logIn_a">Forgot Password?</a>
-    <div class="logIn_btns-form">
-      <button class="logIn_btn logIn_btn-changes">Sing in</button> 
-      <span class="logIn_span">Or</span>
-      <button class="logIn_btn logIn_btn-changes1">Create an account</button>
+    <div class="togglearea">
+      <label for="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </div>
-  </form>
-  <footer class="home__footer">
+    <input type="checkbox" id="toggle">
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="../pages/acapulcod.html">Destinations</a>
+      <a href="../pages/hotelsList.html">Hotels</a>
+      <a href="../pages/login.html">Log In</a>
+    </nav>
+  </header>
+  <div class="logIn_container">
+    <form class="logIn_form">
+      <h1 class="logIn_title">Log in <span class="logIn_subtitle">Please enter your details</span></h1>
+      <label for="email" class="logIn_label">Email</label>
+      <input type="email" name="email" class="logIn_input" id="input" placeholder="Email">
+      <label for="Password" class="logIn_label">Password</label>
+      <input type="password" name="password" class="logIn_input" id="input" placeholder="Password">
+      <a href="#" class="logIn_a">Forgot Password?</a>
+      <div class="logIn_btns-form">
+        <button class="logIn_btn logIn_btn-changes">Sing in</button> 
+        <span class="logIn_span">Or</span>
+        <button class="logIn_btn logIn_btn-changes1">Create an account</button>
+      </div>
+    </form>
+  </div>
+  <!-- <footer class="home__footer">
     <p class="logo">GoTravel</p>
     <div class="social-media">
       <a href="#"><img src="../images/facebook-logo.png" alt="#" class="logo--size"/></a>
@@ -91,6 +75,6 @@
     </div>
     <span class="footer_span logo_span">© GoTravel 2023 </span>
     <span class="footer__span right-reserved">All right reserved</span>
-  </footer>
+  </footer> -->
 </body>
 </html>

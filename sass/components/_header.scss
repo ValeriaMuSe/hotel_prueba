@@ -1,72 +1,85 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
-
-.header__logo {
-  width: 100px;
-  position: relative;
-  bottom: 235px;
+.navbar
+{
+	background-color: #6D6A6A;
+	display: flex;
+	justify-content: center;
 }
-
-.menu__image {
-  max-width: 100%;
+.navbar a
+{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 14px 28px;
 }
-
-.toggle-menu {
-  position: absolute;
-  top: 0.5rem;
-  right: 1.5rem;
-  filter: invert(1);
-  cursor: pointer;
-  width: 40px;
-  z-index: 1;
+.navbar a:hover
+{
+	background-color: white;
+	color: black;
 }
-
-@media screen and (min-width: 768px) {
-  .toggle-menu {
-    display: none;
-  }
+.content p
+{
+	text-align: justify;
+	margin: 10px;
+	padding: 10px;
 }
-
-.main-menu {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #4F9ABF;
-  transition: transform 0.3s;
-  transform: translateY(-100%);
+#toggle
+{
+	display: none;
 }
-
-.main-menu--show {
-  transform: translateY(0);
+.togglearea
+{
+	background-color: #6D6A6A;
+	border-bottom: 2px solid white;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
 }
-
-.toggle-menu__checkbox {
-  display: none;
+.togglearea label
+{
+	background-color: white;
+	height: 45px;
+	width: 50px;
+	color: black;
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-
-.toggle-menu__checkbox:checked + .main-menu {
-  transform: translateY(0);
+.togglearea label span
+{
+	background-color: black;
+	height: 4px;
+	width: 70%;
+	margin: 2px 0px;
 }
-
-@media screen and (min-width: 768px) {
-  .main-menu {
-    flex-direction: row;
-    transform: translateY(0);
-  }
+.togglearea
+{
+	display: none;
 }
-
-.main-menu__item {
-  padding: 1em;
-}
-
-.main-menu__link {
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
+@media screen and (max-width: 1024px)
+{
+	.navbar
+	{
+		flex-direction: column;
+		display: none;
+	}
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea
+	{	
+		display: flex;
+	}
 }

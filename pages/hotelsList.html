@@ -5,13 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/sass/style.css">
+  <link rel="stylesheet" href="../sass/style.css">
   <title>Hotels</title>
 </head>
 
 <body>
   <header>
-    <img src="/images/GoTravel.png" alt=" log icon">
+    <div class="togglearea">
+      <label for="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="toggle">
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="../pages/acapulcod.html">Destinations</a>
+      <a href="../pages/hotelsList.html">Hotels</a>
+      <a href="../pages/login.html">Log In</a>
+    </nav>
   </header>
   <main class="list-container">
     <h1 class="list__title">Hotels</h1>
