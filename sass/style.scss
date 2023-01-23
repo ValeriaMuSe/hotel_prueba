@@ -1,7 +1,3 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-} 
-
 @import'components/banner';
 @import'components/cards';
 @import'components/btn';
@@ -12,3 +8,7 @@ body {
 @import'components/logIn';
 @import'components/title';
 @import'components/list';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+} 

@@ -1,17 +1,15 @@
-*
-{
+* {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 }
-.navbar
-{
+
+.navbar {
 	background-color: #6D6A6A;
 	display: flex;
 	justify-content: center;
 }
-.navbar a
-{
+.navbar a {
 	color: white;
 	text-align: center;
 	font-weight: bold;
@@ -19,23 +17,26 @@
 	text-transform: uppercase;
 	padding: 14px 28px;
 }
+
+.navbar a:hover {
+	background-color: white;
+	color: black;
+}
+
+.content p {
+
 .navbar a:hover
 {
 	background-color: white;
 	color: black;
 }
-.content p
-{
-	text-align: justify;
-	margin: 10px;
-	padding: 10px;
-}
-#toggle
-{
+
+
+#toggle {
 	display: none;
 }
-.togglearea
-{
+
+.togglearea {
 	background-color: #6D6A6A;
 	border-bottom: 2px solid white;
 	color: white;
@@ -43,8 +44,8 @@
 	display: flex;
 	justify-content: flex-end;
 }
-.togglearea label
-{
+
+.togglearea label {
 	background-color: white;
 	height: 45px;
 	width: 50px;
@@ -56,30 +57,28 @@
 	align-items: center;
 	flex-direction: column;
 }
-.togglearea label span
-{
+
+.togglearea label span {
 	background-color: black;
 	height: 4px;
 	width: 70%;
 	margin: 2px 0px;
 }
-.togglearea
-{
+
+.togglearea {
 	display: none;
 }
-@media screen and (max-width: 1024px)
-{
-	.navbar
-	{
+
+@media screen and (max-width: 1024px) {
+	.navbar {
 		flex-direction: column;
 		display: none;
 	}
-	#toggle:checked + .navbar
-	{
+
+	#toggle:checked + .navbar {
 		display: flex;
 	}
-	.togglearea
-	{	
-		display: flex;
-	}
-}
+
+	.togglearea {	
+	  display: none;
+  }

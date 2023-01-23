@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sass/style.css">
 </head>
 <body>
   <header>
@@ -18,27 +21,28 @@
     </div>
     <input type="checkbox" id="toggle">
     <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="pages/hotelQ.html">Destinations</a>
-      <a href="pages/hotelsList.html">Hotels</a>
-      <a href="pages/login.html">Log In</a>
+      <a href="#">Home</a>
+      <a href="">Destinations</a>
+      <a href="/pages/hotelsList.html">Hotels</a>
+      <a href="/pages/login.html">LogIn</a>
     </nav>
-  </header>
+  </header>
   <main>
     <div>
+      <div>
+        <h1 class="hero__title">GoTravel</h1>
+        <p class="hero__subtitle">Travel Agency</p>
+      </div>
       <img class="home-airplane__image" src="images/airplane-home-section.jpg" alt="">
-      <h1>GoTravel</h1>
-      <p>Travel Agency</p>
     </div>
     <div class="home-about-us">
-      <img src="images/globe-image-about-us.jpg" alt="">
       <div class="about-us__text">
-        <h2>About us</h2>
-        <p>Our site is specialized in giving people a variety of destinations and hotels to enjoy their vacations </p>
+        <h2 class="about-us__title">About us</h2>
+        <p class="about-us__description">Our site is specialized in giving people a variety of destinations and hotels to enjoy their vacations </p>
       </div>   
     </div>
   </main>
-  <footer class="home__footer">
+  <!-- <footer class="home__footer">
     <p class="logo">GoTravel</p>
     <div class="social-media">
       <a href="#"><img src="../images/facebook-logo.png" alt="#" class="logo--size"/></a>
@@ -74,6 +78,55 @@
     </div>
     <span class="footer_span logo_span">© GoTravel 2023 </span>
     <span class="footer__span right-reserved">All right reserved</span>
-  </footer>
+  </footer> -->
+<footer> 
+  <div class="fixed-content">
+    <div class="footer-top clearfix">
+      <div class="cat footer-wrap f-left">
+        <h4>CATEGORIES</h4>
+          <ul>               
+            <li><a href="#"><i class="fas fa-square-full"></i>All Courses</a></li>
+            <li><a href="#"><i class="fas fa-square-full"></i>Web Development</a></li>
+            <li><a href="#"><i class="fas fa-square-full"></i>Genarel Education</a></li>
+            <li><a href="#"><i class="fas fa-square-full"></i>Digital Marketing</a></li>
+            <li><a href="#"><i class="fas fa-square-full"></i>Web Design</a></li>
+          </ul>
+      </div>
+
+    <div class="add footer-wrap f-left">
+      <h4>ADDRESS</h4>
+      <div class="footer-city clearfix">
+        <div class="f-city-text ">
+        <p>503 Old Buffalo Street Northwest #205 New York-3087</p>
+      </div>
+    </div>
+
+  <div class="footer-contact clearfix">
+    <div class="f-city-text ">
+        <a href="tel:(123)-456-7890 , (123)-456-7890">
+          (123)-456-7890 , (123)-456-7890
+        </a>
+      </div>
+  </div>
+
+              <div class="footer-mail clearfix">
+                  <div class="f-city-text ">
+                      
+                      <a href="mailto:infoname@gmail.com ">infoname@gmail.com</a>
+                      <a href="mailto:www.yourname.com"> www.yourname.com</a>
+                         
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+          <div class="f-bottom-copyright f-left">
+              <p>
+                  © 2020 All Rights Reserved. Developed By <span>LFWF Acaddemy</span></p>
+          </div>
+      </div>
+  </div>
+</footer>
 </body>
 </html>
