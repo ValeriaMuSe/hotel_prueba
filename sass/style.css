@@ -81,77 +81,87 @@ body {
   align-items: center;
 }
 
-body {
-  margin: 0;
-  font-family: sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.header__logo {
-  width: 100px;
-  position: relative;
-  bottom: 235px;
-}
-
-.menu__image {
-  max-width: 100%;
-}
-
-.toggle-menu {
-  position: absolute;
-  top: 0.5rem;
-  right: 1.5rem;
-  filter: invert(1);
-  cursor: pointer;
-  width: 40px;
-  z-index: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .toggle-menu {
-    display: none;
-  }
-}
-.main-menu {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+.navbar {
+  background-color: #6D6A6A;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #4F9ABF;
-  transition: transform 0.3s;
-  transform: translateY(-100%);
+  justify-content: center;
 }
 
-.main-menu--show {
-  transform: translateY(0);
+.navbar a {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 28px;
 }
 
-.toggle-menu__checkbox {
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.content p {
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+
+#toggle {
   display: none;
 }
 
-.toggle-menu__checkbox:checked + .main-menu {
-  transform: translateY(0);
+.togglearea {
+  background-color: #6D6A6A;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-@media screen and (min-width: 768px) {
-  .main-menu {
-    flex-direction: row;
-    transform: translateY(0);
+.togglearea label {
+  background-color: white;
+  height: 45px;
+  width: 50px;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.togglearea label span {
+  background-color: black;
+  height: 4px;
+  width: 70%;
+  margin: 2px 0px;
+}
+
+.togglearea {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    display: none;
+  }
+  #toggle:checked + .navbar {
+    display: flex;
+  }
+  .togglearea {
+    display: flex;
   }
 }
-.main-menu__item {
-  padding: 1em;
-}
-
-.main-menu__link {
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 li {
   list-style: none;
 }
@@ -267,17 +277,9 @@ a {
   cursor: pointer;
 }
 
-body {
+.logIn_container {
   font-weight: 500;
-  height: 60vh;
-  justify-content: center;
-  align-items: center;
-}
-
-i {
-  position: absolute;
-  right: 15%;
-  bottom: 295px;
+  width: auto;
 }
 
 .logIn_form {
@@ -320,21 +322,10 @@ i {
 
 .logIn_input {
   position: relative;
-  width: 90%;
+  width: 100%;
   padding: 20px 12px 5px;
   margin-bottom: 10px;
   font-size: 1rem;
-}
-
-.logIn_label {
-  position: absolute;
-  left: 61px;
-  top: 152px;
-  font-size: 0.8rem;
-}
-
-.logIn-move {
-  top: 210px;
 }
 
 .logIn_a {
@@ -342,6 +333,10 @@ i {
   text-decoration: none;
   color: #000;
   cursor: pointer;
+}
+
+.logIn_label {
+  visibility: hidden;
 }
 
 .logIn_btn {
@@ -386,6 +381,98 @@ i {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  .logIn_container {
+    display: grid;
+    place-content: center;
+  }
+  .logIn_form {
+    display: grid;
+    width: 72vh;
+    height: 662px;
+    align-items: center;
+  }
+  .logIn_title {
+    font-size: 50px;
+  }
+  .logIn_subtitle {
+    font-size: 25px;
+  }
+  .logIn_label {
+    font-size: 16px;
+    visibility: visible;
+  }
+  .logIn_input {
+    height: 3rem;
+  }
+  #input::-moz-placeholder {
+    visibility: hidden;
+  }
+  #input:-ms-input-placeholder {
+    visibility: hidden;
+  }
+  #input::placeholder {
+    visibility: hidden;
+  }
+  .logIn_a {
+    font-size: 20px;
+    text-align: right;
+  }
+  .logIn_span {
+    font-size: 24px;
+  }
+  .logIn_btn {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logIn_container {
+    display: grid;
+    place-content: center;
+  }
+  .logIn_form {
+    width: 87vh;
+    height: 94vh;
+  }
+  .logIn_title {
+    font-size: 60px;
+  }
+  .logIn_subtitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .logIn_label {
+    font-size: 20px;
+    visibility: visible;
+  }
+  .logIn_input {
+    height: 8vh;
+  }
+  #input::-moz-placeholder {
+    visibility: hidden;
+  }
+  #input:-ms-input-placeholder {
+    visibility: hidden;
+  }
+  #input::placeholder {
+    visibility: hidden;
+  }
+  .logIn_a {
+    font-size: 30px;
+    margin-top: 18px;
+  }
+  .logIn_btns-form {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .logIn_btn {
+    height: 12vh;
+    font-size: 2rem;
+  }
+  .logIn_span {
+    font-size: 30px;
+  }
+}
 .list__title {
   font-weight: 700;
   font-size: 35px;
