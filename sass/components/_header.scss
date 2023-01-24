@@ -8,7 +8,7 @@
 
 .nav__header{
 	background-color: #eeee;
-	padding-inline: 1rem;
+	padding-inline: 2rem;
 }
 
 .toggle{
@@ -26,11 +26,11 @@
 .toggle .close{
 	display: none;
 	height: 2.3rem;
-	margin-right: 0.2rem;
 }
 
 .nav-checkbox{
 	display: none;
+}
 
 .menu{
 	display: flex;
@@ -85,4 +85,4 @@
 	.menu li{
 		display: none;
 	}
-}}
+}
