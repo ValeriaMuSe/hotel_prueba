@@ -195,6 +195,34 @@
   }
 }
 
+footer {
+  background-color: cadetblue;
+  color: #fff;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.footer-description {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
 .home-page {
   color: #333;
 }
