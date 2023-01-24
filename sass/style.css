@@ -35,7 +35,6 @@
 
 .card-container {
   display: grid;
-  width: auto;
 }
 
 .card-general {
@@ -103,10 +102,9 @@
   color: black;
 }
 
-.content p {
-  text-align: justify;
-  margin: 10px;
-  padding: 10px;
+.navbar a:hover {
+  background-color: white;
+  color: black;
 }
 
 #toggle {
@@ -155,7 +153,7 @@
     display: flex;
   }
   .togglearea {
-    display: flex;
+    display: none;
   }
 }
 .home-page {
@@ -167,7 +165,6 @@
   font-size: 55px;
   font-weight: 700;
   margin-bottom: -10px;
-
 }
 
 .hero__subtitle {
@@ -569,13 +566,6 @@
   margin-left: 10px;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-}/*# sourceMappingURL=style.css.map */
-
-
-
-/*DESTINATION*/
 .main-tittle {
   position: absolute;
   top: 13rem;
@@ -590,12 +580,12 @@ body {
 .main-subtittle {
   padding: 15px;
   font-size: 19px;
-  margin: auto ;
-  text-align: center ;
+  margin: auto;
+  text-align: center;
 }
 
 .main-text {
-  margin: auto ;
+  margin: auto;
   text-align: center;
   padding: 10px 0 40px 0;
   font-size: 12px;
@@ -607,7 +597,7 @@ body {
   margin: 1rem;
 }
 
-.galery-container div{
+.galery-container div {
   display: flex;
 }
 
@@ -626,3 +616,58 @@ body {
   margin-left: 10px;
   margin: auto;
 }
+
+.main-tittle {
+  position: absolute;
+  top: 13rem;
+  color: #FFF;
+  padding: 15px;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.main-subtittle {
+  padding: 15px;
+  font-size: 19px;
+  margin: auto;
+  text-align: center;
+}
+
+.main-text {
+  margin: auto;
+  text-align: center;
+  padding: 10px 0 40px 0;
+  font-size: 12px;
+  width: 80%;
+}
+
+.galery-image {
+  width: 40%;
+  margin: 1rem;
+}
+
+.galery-container div {
+  display: flex;
+}
+
+.list__btn2 {
+  width: 147px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  border: 1px solid transparent;
+  margin-top: 6px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,50 @@
-.main-container {
-    .main-tittle{
-        text-align: 9rem;
-    }
+.main-tittle {
+  position: absolute;
+  top: 13rem;
+  color: #FFF;
+  padding: 15px;
 }
+  
+  .main-image {
+    width: 100%;
+  }
+  
+  .main-subtittle {
+    padding: 15px;
+    font-size: 19px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .main-text {
+    margin: auto;
+    text-align: center;
+    padding: 10px 0 40px 0;
+    font-size: 12px;
+    width: 80%;
+  }
+  
+  .galery-image {
+    width: 40%;
+    margin: 1rem;
+  }
+  
+  .galery-container div{
+    display: flex;
+  }
+  
+  .list__btn2 {
+    width: 147px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #2196f3;
+    border: 1px solid transparent;
+    margin-top: 6px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin: auto;
+  }
