@@ -1,3 +1,6 @@
+
+@import'../breakpoints/media';
+
 .banner-container{
   width: auto;
   display: grid;
@@ -33,3 +36,34 @@
   margin-left: 15px;
 }
 
+@include tablet {
+  .banner__title {
+    font-size: 28px;
+  }
+
+  .banner__subtitle{
+    font-size: 28px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .banner__text{
+    width: 44%;
+  }
+}
+
+@include desktop {
+  .banner__title {
+    font-size: 35px;
+  }
+  
+  .banner__subtitle{
+    font-size: 40px;
+    margin-top: 65px;
+  }
+
+  .banner__text{
+    font-size: 19px;
+    margin-top: 25px;
+  }
+}
