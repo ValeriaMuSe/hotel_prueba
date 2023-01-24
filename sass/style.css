@@ -78,84 +78,88 @@
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar {
-  background-color: #6D6A6A;
-  display: flex;
-  justify-content: center;
+.nav__header {
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  padding-inline: 1rem;
 }
 
-.navbar a {
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 14px 28px;
-}
-
-.navbar a:hover {
-  background-color: white;
-  color: black;
-}
-
-.content p {
-  text-align: justify;
-  margin: 10px;
-  padding: 10px;
-}
-
-#toggle {
-  display: none;
-}
-
-.togglearea {
-  background-color: #6D6A6A;
-  border-bottom: 2px solid white;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.togglearea label {
-  background-color: white;
-  height: 45px;
-  width: 50px;
-  color: black;
-  border-radius: 6px;
+.toggle {
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-.togglearea label span {
-  background-color: black;
-  height: 4px;
-  width: 70%;
-  margin: 2px 0px;
+.toggle .menu {
+  height: 2rem;
+  margin-top: 0.2rem;
 }
 
-.togglearea {
+.toggle .close {
+  display: none;
+  height: 2.3rem;
+  margin-right: 0.2rem;
+}
+
+.nav-checkbox {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .navbar {
-    flex-direction: column;
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu li {
+  display: none;
+  padding: 1rem;
+  list-style: none;
+}
+
+.menu li:first-child {
+  display: block;
+  margin-right: auto;
+  padding: 0;
+}
+
+.menu a {
+  color: inherit;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.logo {
+  height: 2rem;
+  margin-top: 0.7rem;
+}
+
+#nav-checkbox:checked ~ ul.menu li {
+  display: block;
+}
+
+#nav-checkbox:checked ~ label.toggle .close {
+  display: block;
+}
+
+#nav-checkbox:checked ~ label.toggle .menu {
+  display: none;
+}
+
+@media screen and (min-witdh: 365px) {
+  .toggle {
     display: none;
   }
-  #toggle:checked + .navbar {
-    display: flex;
+  .menu {
+    flex-direction: row;
   }
-  .togglearea {
-    display: flex;
+  .menu li {
+    display: none;
   }
 }
 .home-page {
@@ -167,7 +171,6 @@
   font-size: 55px;
   font-weight: 700;
   margin-bottom: -10px;
-
 }
 
 .hero__subtitle {
@@ -481,14 +484,14 @@
   }
   .logIn_form {
     width: 87vh;
-    height: 94vh;
+    height: 100vh;
   }
   .logIn_title {
     font-size: 60px;
   }
   .logIn_subtitle {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .logIn_label {
     font-size: 20px;
@@ -512,7 +515,7 @@
   }
   .logIn_btns-form {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 70px;
   }
   .logIn_btn {
     height: 12vh;
@@ -569,60 +572,10 @@
   margin-left: 10px;
 }
 
+.main-container .main-tittle {
+  text-align: 9rem;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=style.css.map */
-
-
-
-/*DESTINATION*/
-.main-tittle {
-  position: absolute;
-  top: 13rem;
-  color: #FFF;
-  padding: 15px;
-}
-
-.main-image {
-  width: 100%;
-}
-
-.main-subtittle {
-  padding: 15px;
-  font-size: 19px;
-  margin: auto ;
-  text-align: center ;
-}
-
-.main-text {
-  margin: auto ;
-  text-align: center;
-  padding: 10px 0 40px 0;
-  font-size: 12px;
-  width: 80%;
-}
-
-.galery-image {
-  width: 40%;
-  margin: 1rem;
-}
-
-.galery-container div{
-  display: flex;
-}
-
-.list__btn2 {
-  width: 147px;
-  height: 35px;
-  font-size: 16px;
-  border-radius: 5px;
-  background-color: #2196f3;
-  border: 1px solid transparent;
-  margin-top: 6px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-  margin-left: 10px;
-  margin: auto;
-}
