@@ -33,6 +33,32 @@
   margin-left: 15px;
 }
 
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  .banner__title {
+    font-size: 28px;
+  }
+  .banner__subtitle {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .banner__text {
+    width: 44%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner__title {
+    font-size: 35px;
+  }
+  .banner__subtitle {
+    font-size: 40px;
+    margin-top: 65px;
+  }
+  .banner__text {
+    font-size: 19px;
+    margin-top: 25px;
+  }
+}
 .card-container {
   display: grid;
 }
@@ -57,6 +83,22 @@
   text-align: center;
 }
 
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  .card-container {
+    display: flex;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .card-general {
+    width: 208px;
+    border: 1px solid #000;
+    height: 415px;
+  }
+  .card__text {
+    font-size: 20px;
+    width: auto;
+  }
+}
 .button--form {
   display: grid;
   place-content: center;
@@ -108,60 +150,51 @@
 .nav-checkbox {
   display: none;
 }
-
-.menu {
+.nav-checkbox .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.menu li {
+.nav-checkbox .menu li {
   display: none;
   padding: 1rem;
   list-style: none;
 }
-
-.menu li:first-child {
+.nav-checkbox .menu li:first-child {
   display: block;
   margin-right: auto;
   padding: 0;
 }
-
-.menu a {
+.nav-checkbox .menu a {
   color: inherit;
   font-size: 1.2rem;
   text-decoration: none;
 }
-
-.logo {
+.nav-checkbox .logo {
   height: 2rem;
   margin-top: 0.7rem;
 }
-
-#nav-checkbox:checked ~ ul.menu li {
+.nav-checkbox #nav-checkbox:checked ~ ul.menu li {
   display: block;
 }
-
-#nav-checkbox:checked ~ label.toggle .close {
+.nav-checkbox #nav-checkbox:checked ~ label.toggle .close {
   display: block;
 }
-
-#nav-checkbox:checked ~ label.toggle .menu {
+.nav-checkbox #nav-checkbox:checked ~ label.toggle .menu {
   display: none;
 }
-
 @media screen and (min-witdh: 365px) {
-  .toggle {
+  .nav-checkbox .toggle {
     display: none;
   }
-  .menu {
+  .nav-checkbox .menu {
     flex-direction: row;
   }
-
-  .menu li {
+  .nav-checkbox .menu li {
     display: none;
   }
 }
+
 .home-page {
   color: #333;
 }
@@ -260,7 +293,7 @@
 .hotelQ_title {
   border-bottom: 2px solid #1161ed;
   padding-left: 12px;
-  font-size: 22px;
+  font-size: 25px;
   padding-bottom: 5px;
   letter-spacing: 2px;
   display: inline-block;
@@ -572,11 +605,6 @@
   margin-left: 10px;
 }
 
-.main-container .main-tittle {
-  text-align: 9rem;
-}
-
-=======
 .main-tittle {
   position: absolute;
   top: 13rem;
