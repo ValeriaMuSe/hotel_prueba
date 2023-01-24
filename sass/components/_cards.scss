@@ -1,3 +1,5 @@
+@import'../breakpoints/media';
+
 .card-container{
   display: grid;
   width: auto;
@@ -23,3 +25,24 @@
   text-align: center;
 }
 
+@include tablet {
+
+    .card-container {
+      display: flex;
+      column-gap: 12px;
+  }
+  
+  .card-general {
+      width: 208px;
+      border: 1px solid #000;
+      height: 415px;
+}
+
+.card__text{
+  font-size: 20px;
+  width: auto;
+
+
+}
+
+}
