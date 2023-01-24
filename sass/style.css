@@ -126,7 +126,7 @@
 
 .nav__header {
   background-color: rgba(238, 238, 238, 0.9333333333);
-  padding-inline: 1rem;
+  padding-inline: 2rem;
 }
 
 .toggle {
@@ -144,57 +144,64 @@
 .toggle .close {
   display: none;
   height: 2.3rem;
-  margin-right: 0.2rem;
 }
 
 .nav-checkbox {
   display: none;
 }
-.nav-checkbox .menu {
+
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.nav-checkbox .menu li {
+
+.menu li {
   display: none;
   padding: 1rem;
   list-style: none;
 }
-.nav-checkbox .menu li:first-child {
+
+.menu li:first-child {
   display: block;
   margin-right: auto;
   padding: 0;
 }
-.nav-checkbox .menu a {
+
+.menu a {
   color: inherit;
   font-size: 1.2rem;
   text-decoration: none;
 }
-.nav-checkbox .logo {
+
+.logo {
   height: 2rem;
   margin-top: 0.7rem;
 }
-.nav-checkbox #nav-checkbox:checked ~ ul.menu li {
+
+#nav-checkbox:checked ~ ul.menu li {
   display: block;
-}
-.nav-checkbox #nav-checkbox:checked ~ label.toggle .close {
-  display: block;
-}
-.nav-checkbox #nav-checkbox:checked ~ label.toggle .menu {
-  display: none;
-}
-@media screen and (min-witdh: 365px) {
-  .nav-checkbox .toggle {
-    display: none;
-  }
-  .nav-checkbox .menu {
-    flex-direction: row;
-  }
-  .nav-checkbox .menu li {
-    display: none;
-  }
 }
 
+#nav-checkbox:checked ~ label.toggle .close {
+  display: block;
+}
+
+#nav-checkbox:checked ~ label.toggle .menu {
+  display: none;
+}
+
+@media screen and (min-witdh: 365px) {
+  .toggle {
+    display: none;
+  }
+  .menu {
+    flex-direction: row;
+  }
+  .menu li {
+    display: none;
+  }
+}
 .home-page {
   color: #333;
 }
@@ -296,35 +303,32 @@
   font-size: 25px;
   padding-bottom: 5px;
   letter-spacing: 2px;
-  display: inline-block;
+  display: grid;
   font-weight: 100;
+  place-content: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .hotelQ_subtitle {
   text-transform: uppercase;
-  font-size: 12px;
+  width: 100%;
+  font-size: 18px;
   opacity: 0.4;
   display: inline-block;
   position: relative;
-  top: -55px;
+  top: -61px;
   left: 15px;
   transition: all 0.5s ease-in-out;
 }
 
-.hotelQ_subtitle-1 {
-  text-transform: uppercase;
-  font-size: 12px;
-  opacity: 0.4;
-  display: inline-block;
-  position: relative;
-  top: -94px;
+.hotelQ_subtitle-fixed {
+  top: -100px;
   left: 15px;
-  transition: all 0.5s ease-in-out;
 }
 
 .hotelQ_input {
-  width: 90%;
+  width: 100%;
   height: 40px;
   border-radius: 20px;
   background: #EEEEEE;
@@ -335,33 +339,58 @@
   padding: 7px;
 }
 
-.hotelQ_input-1 {
-  width: 90%;
+.hotelQ_input-fixed {
   height: 80px;
-  border-radius: 20px;
-  background: #EEEEEE;
-  border: 2px solid rgba(255, 255, 255, 0);
-  margin-top: 15px;
-  transition: all 0.5s ease-in-out;
-  color: #000;
-  padding: 7px;
 }
 
 .hotelQ_btn {
   background-color: #1161ed;
   color: #FFF;
-  width: 90%;
+  width: 80%;
   padding: 10px 20px;
-  display: block;
+  display: grid;
+  place-content: center;
   height: 39px;
   border-radius: 20px;
   margin-top: 30px;
   transition: all 0.5s ease-in-out;
   border: none;
   text-transform: uppercase;
+  font-size: 20px;
   cursor: pointer;
+  margin-left: 10%;
 }
 
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  .hotelQ_title {
+    font-size: 32px;
+  }
+  .hotelQ_subtitle {
+    font-size: 20px;
+  }
+  .hotelQ_input {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hotelQ_title {
+    font-size: 38px;
+  }
+  .hotelQ_subtitle {
+    font-size: 25px;
+    top: -78px;
+  }
+  .hotelQ_subtitle-fixed {
+    top: -127px;
+  }
+  .hotelQ_input {
+    margin-top: 30px;
+    height: 50px;
+  }
+  .hotelQ_input-fixed {
+    height: 100px;
+  }
+}
 .logIn_container {
   font-weight: 500;
   width: auto;
