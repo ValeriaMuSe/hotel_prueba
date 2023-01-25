@@ -38,32 +38,35 @@
 
 @include tablet {
   .banner__title {
-    font-size: 28px;
+    font-size: 34px;
   }
 
   .banner__subtitle{
     font-size: 28px;
     margin-top: 20px;
-    margin-left: 15px;
+    margin-bottom: 20px;
   }
 
   .banner__text{
-    width: 44%;
+    width: 38%;
+    padding-left: 17px;
+    padding-right: 178px;
   }
 }
 
 @include desktop {
   .banner__title {
-    font-size: 35px;
+    font-size: 44px;
   }
   
   .banner__subtitle{
-    font-size: 40px;
-    margin-top: 65px;
+    font-size: 38px;
+    margin-top: 20px;
   }
 
   .banner__text{
-    font-size: 19px;
-    margin-top: 25px;
+    font-size: 18px;
+    padding-right: 197px;
+    width: 115%;
   }
 }

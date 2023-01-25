@@ -29,12 +29,14 @@
     .card-container {
       display: flex;
       column-gap: 12px;
+      position: absolute;
+      left: 64px;
+      top: 603px;
   }
   
   .card-general {
-      width: 208px;
+      width: 189px;
       border: 1px solid #000;
-      height: 415px;
 }
 
 .card__text{
@@ -43,5 +45,19 @@
 
 
 }
+
+}
+
+@include desktop {
+  .card-container{
+    left: 147px;
+    top: 791px;
+  }
+  
+  .card-general {
+    width: 249px;
+    height: 302px;
+}
+
 
 }
