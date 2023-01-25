@@ -18,3 +18,20 @@
   justify-content: center;
   align-items: center;
 }
+
+@include tablet {
+  .butn {
+    position: absolute;
+    left: 210px;
+    top: 254px;
+  }
+
+}
+
+@include desktop {
+  .butn{
+    left: 310px;
+    top: 303px;
+  }
+  
+}
