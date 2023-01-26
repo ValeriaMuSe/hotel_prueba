@@ -14,19 +14,31 @@
 
 <body>
   <header>
-    <div class="togglearea">
-      <label for="toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    <nav class="nav__header">
+      <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+      <label for="nav-checkbox" class="toggle">
+        <img class="menu" src="../images/menu.svg" alt>
+        <img  class="close" src="../images/x.svg" alt>
       </label>
-    </div>
-    <input type="checkbox" id="toggle">
-    <nav class="navbar">
-      <a href="../index.html">Home</a>
-      <a href="../pages/acapulcod.html">Destinations</a>
-      <a href="../pages/hotelsList.html">Hotels</a>
-      <a href="../pages/login.html">Log In</a>
+      <ul class="menu">
+        <li>
+          <a href="#">
+            <img class="logo" src="../images/GoTravel.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="/pages/destinations/destinationsList.html">Destinations</a>
+        </li>
+        <li>
+          <a href="/pages/hotelsList.html">Hotels</a>
+        </li>
+        <li>
+          <a href="/pages/login.html">Sing Up</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="banner-container">
@@ -45,7 +57,7 @@
       </p>
     </div>
     <div class="card-general">
-      <img class="card__imagen" src="../images/masterDouble.jpg" alt="imagen about hotel room">
+      <img class="card__imagen card-image2" src="../images/masterDouble.jpg" alt="imagen about hotel room">
       <p class="card__text">Master 2 Double Beds Non smoking
         $210$189
         Per Night
@@ -59,10 +71,10 @@
         Per Night
       </p>
     </div>
-    <div class="button--form">
-      <a href="#" class="butn">form</a>
-    </div>
   </section>
+  <div class="button--form">
+    <a href="#" class="butn">form</a>
+  </div>
   <!--  
   <footer class="home__footer">
     <p class="logo">GoTravel</p>

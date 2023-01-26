@@ -22,51 +22,14 @@
 .banner__subtitle{
   font-weight: 600;
   font-size: 24px;
-  width: 90%;
   text-align: center;
   color: #333333;
 }
 
 .banner__text{
   font-weight: 500;
-  width: 87%;
   font-size: 15px;
   color: #333333;
   text-align: center;
   margin-left: 15px;
-}
-
-@include tablet {
-  .banner__title {
-    font-size: 34px;
-  }
-
-  .banner__subtitle{
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .banner__text{
-    width: 38%;
-    padding-left: 17px;
-    padding-right: 178px;
-  }
-}
-
-@include desktop {
-  .banner__title {
-    font-size: 44px;
-  }
-  
-  .banner__subtitle{
-    font-size: 38px;
-    margin-top: 20px;
-  }
-
-  .banner__text{
-    font-size: 18px;
-    padding-right: 197px;
-    width: 115%;
-  }
 }
