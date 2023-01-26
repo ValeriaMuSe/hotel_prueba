@@ -12,19 +12,31 @@
 </head>
 <body>
   <header>
-    <div class="togglearea">
-      <label for="toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    <nav class="nav__header">
+      <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+      <label for="nav-checkbox" class="toggle">
+        <img class="menu" src="../../images/menu.svg" alt>
+        <img  class="close" src="../../images/x.svg" alt>
       </label>
-    </div>
-    <input type="checkbox" id="toggle">
-    <nav class="navbar">
-      <a href="../index.html">Home</a>
-      <a href="../pages/acapulcod.html">Destinations</a>
-      <a href="../pages/hotelsList.html">Hotels</a>
-      <a href="../pages/login.html">Log In</a>
+      <ul class="menu">
+        <li>
+          <a href="#">
+            <img class="logo" src="../../images/gotravel-logo.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="/pages/destinations/destinationsList.html">Destinations</a>
+        </li>
+        <li>
+          <a href="/pages/hotelsList.html">Hotels</a>
+        </li>
+        <li>
+          <a href="/pages/login.html">Sign Up</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
@@ -53,7 +65,36 @@
     </div>
     <a class="list__btn2" href="">Hotel</a>
   </section>
-  <footer></footer>
+  <footer> 
+    <div class="footer-content">
+      <p class="footer-title">GoTravel</p>
+      <p class="info__line">Information</p>
+      <ul class="">
+        <li class="info__line">About GoTravel</li>
+      </ul>
+      <p class="">Contact us</p>
+      <ul class="">
+        <li>
+          <address>
+            <p class="">176 Street, New York,NY 10014</p>
+          </address>
+        </li>
+        <li>
+          <address class="">
+            <a class="address" href="tel:+1565231-5645">+1(565)231-5645</a>
+          </address>
+        </li>
+        <li>
+          <address class="info__line">
+            <a class="address" href="mailto:gotravel@example.com">gotravel@example.com</a>
+          </address>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="rights-reserved">© GoTravel 2023  All right reserved</p>
+    </div>
+  </footer>
 </body>
 
 </html>
