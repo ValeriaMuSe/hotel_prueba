@@ -6,7 +6,9 @@
 
 .card-general{
   width: auto;
-  border: 1px solid #000;
+  background-color: rgb(225, 225, 225);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   display: grid;
   place-content: center;
   margin-bottom: 10px;
@@ -14,6 +16,14 @@
 
 .card__imagen{
   width: 100%;
+}
+
+.card-image2 {
+  width: 719px;
+}
+
+.card-image3 {
+  width: 719px;
 }
 
 .card__text{
@@ -27,13 +37,30 @@
 @include tablet {
   .card-container{
     display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+
+  .card-general {
+    width: 218px;
+    margin-left: 10px;
   }
   
   .card__imagen{
-    width: 210px;
+    width: 218px;
+    height: 120px;
+  }
+
+  .card-image1 {
+    margin-top: -16px;
   }
 
   .card-image2 {
     margin-top: -17px;
+  }
+
+  .card__text {
+    padding: 12px;
   }
 }
