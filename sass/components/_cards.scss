@@ -25,39 +25,15 @@
 }
 
 @include tablet {
-
-    .card-container {
-      display: flex;
-      column-gap: 12px;
-      position: absolute;
-      left: 64px;
-      top: 603px;
-  }
-  
-  .card-general {
-      width: 189px;
-      border: 1px solid #000;
-}
-
-.card__text{
-  font-size: 20px;
-  width: auto;
-
-
-}
-
-}
-
-@include desktop {
   .card-container{
-    left: 147px;
-    top: 791px;
+    display: flex;
   }
   
-  .card-general {
-    width: 249px;
-    height: 302px;
-}
+  .card__imagen{
+    width: 210px;
+  }
 
-
+  .card-image2 {
+    margin-top: -17px;
+  }
 }

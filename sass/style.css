@@ -19,46 +19,18 @@
 .banner__subtitle {
   font-weight: 600;
   font-size: 24px;
-  width: 90%;
   text-align: center;
   color: #333333;
 }
 
 .banner__text {
   font-weight: 500;
-  width: 87%;
   font-size: 15px;
   color: #333333;
   text-align: center;
   margin-left: 15px;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1024px) {
-  .banner__title {
-    font-size: 28px;
-  }
-  .banner__subtitle {
-    font-size: 28px;
-    margin-top: 20px;
-    margin-left: 15px;
-  }
-  .banner__text {
-    width: 44%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .banner__title {
-    font-size: 35px;
-  }
-  .banner__subtitle {
-    font-size: 40px;
-    margin-top: 65px;
-  }
-  .banner__text {
-    font-size: 19px;
-    margin-top: 25px;
-  }
-}
 .card-container {
   display: grid;
 }
@@ -86,17 +58,12 @@
 @media screen and (min-width: 720px) and (max-width: 1024px) {
   .card-container {
     display: flex;
-    -moz-column-gap: 12px;
-         column-gap: 12px;
   }
-  .card-general {
-    width: 208px;
-    border: 1px solid #000;
-    height: 415px;
+  .card__imagen {
+    width: 210px;
   }
-  .card__text {
-    font-size: 20px;
-    width: auto;
+  .card-image2 {
+    margin-top: -17px;
   }
 }
 .button--form {
@@ -202,26 +169,29 @@
     display: none;
   }
 }
-
 footer {
   background-color: cadetblue;
   color: #fff;
-  height: auto;
+  height: 290px;
   width: 100vw;
   padding-top: 40px;
+  line-height: 32px;
+  margin-top: 35px;
 }
 
 .footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+}
+
+.rights-reserved {
+  text-align: center;
+  color: rgb(222, 222, 222);
 }
 
 .footer-title {
   font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 3rem;
+  font-weight: 700;
+  margin-top: -14px;
 }
 
 .footer-description {
@@ -231,6 +201,25 @@ footer {
   font-size: 14px;
 }
 
+.address {
+  text-decoration: none;
+  color: #fff;
+}
+
+.info__line {
+  border-bottom: 1px solid;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  footer {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    font-size: 21px;
+  }
+}
 .home-page {
   color: #333;
 }
