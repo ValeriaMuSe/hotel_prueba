@@ -3,8 +3,9 @@
 footer {
   background-color: cadetblue;
   color: #fff;
-  height: 290px;
-  width: 100vw;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
   padding-top: 40px;
   line-height: 32px;
   margin-top: 35px;
@@ -43,12 +44,13 @@ footer {
 
 @include tablet {
   footer {
-    font-size: 19px;
+    font-size: 21px;
+    width: auto;
   }
 }
 
 @include desktop {
   footer {
-    font-size: 21px;
+    font-size: 23px;
   }
 }
