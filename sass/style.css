@@ -57,6 +57,14 @@
   width: 100%;
 }
 
+.card-image2 {
+  width: 719px;
+}
+
+.card-image3 {
+  width: 719px;
+}
+
 .card__text {
   font-weight: 500;
   font-size: 16px;
@@ -88,6 +96,7 @@
     padding: 12px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .card-container {
     display: flex;
@@ -103,6 +112,12 @@
     height: 100%;
   }
 }
+  
+  .card__text {
+    padding: 12px;
+  }
+}
+
 .button--form {
   display: grid;
   place-content: center;
@@ -113,7 +128,7 @@
   width: 140px;
   padding: 15px;
   font-size: 25px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: #2196f3;
   text-decoration: none;
   color: #fff;
