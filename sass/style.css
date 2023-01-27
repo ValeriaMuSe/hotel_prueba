@@ -1,13 +1,7 @@
-.banner-container {
-  width: auto;
-  display: grid;
-  justify-content: center;
-}
-
 .banner__title {
   width: auto;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 27px;
   color: #333333;
   text-align: center;
 }
@@ -26,23 +20,37 @@
 
 .banner__text {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   color: #333333;
   text-align: center;
 }
 
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  .banner__image {
+    width: 100%;
+  }
+  .banner__text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner__image {
+    width: 100%;
+  }
+}
 .card-container {
   display: grid;
+  justify-items: center;
 }
 
 .card-general {
-  width: auto;
+  width: 70%;
   background-color: rgb(225, 225, 225);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  display: grid;
-  place-content: center;
   margin-bottom: 10px;
+  display: grid;
+  justify-content: center;
 }
 
 .card__imagen {
@@ -59,10 +67,11 @@
 
 .card__text {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   width: auto;
   color: #333333;
   text-align: center;
+  padding: 10px;
 }
 
 @media screen and (min-width: 720px) and (max-width: 1024px) {
@@ -80,14 +89,29 @@
     width: 218px;
     height: 120px;
   }
-  
   .card-image1 {
     margin-top: -16px;
   }
-  
-  .card-image2 {
-    margin-top: -17px;
+  .card__text {
+    padding: 12px;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+  .card-general {
+    width: 265px;
+    margin-left: 20px;
+  }
+  .card__imagen {
+    height: 100%;
+  }
+}
   
   .card__text {
     padding: 12px;
@@ -102,7 +126,7 @@
 
 .btn {
   width: 140px;
-  height: 35px;
+  padding: 15px;
   font-size: 25px;
   border-radius: 7px;
   background-color: #2196f3;
@@ -201,8 +225,9 @@
 footer {
   background-color: cadetblue;
   color: #fff;
-  height: 290px;
-  width: 100vw;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
   padding-top: 40px;
   line-height: 32px;
   margin-top: 35px;
@@ -241,12 +266,13 @@ footer {
 
 @media screen and (min-width: 720px) and (max-width: 1024px) {
   footer {
-    font-size: 19px;
+    font-size: 21px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1024px) {
   footer {
-    font-size: 21px;
+    font-size: 23px;
   }
 }
 .home-page {
