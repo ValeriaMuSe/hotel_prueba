@@ -8,14 +8,14 @@
 
 .btn{
   width: 140px;
-  height: 35px;
+  padding: 15px;
   font-size: 25px;
   border-radius: 7px;
   background-color: #2196f3;
   text-decoration: none;
   color: #fff;
   margin-top: 10px;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
