@@ -96,7 +96,6 @@
     padding: 12px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .card-container {
     display: flex;
@@ -111,13 +110,10 @@
   .card__imagen {
     height: 100%;
   }
-}
-  
   .card__text {
     padding: 12px;
   }
 }
-
 .button--form {
   display: grid;
   place-content: center;
@@ -133,7 +129,7 @@
   text-decoration: none;
   color: #fff;
   margin-top: 10px;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
